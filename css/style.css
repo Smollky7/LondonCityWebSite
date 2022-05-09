@@ -62,7 +62,8 @@ nav .menu-text, nav .menu-text a {
 }
 
 nav .menu-text a:hover {
-    color: rgba(255,255,255,0.5);
+    color: rgb(6, 51, 97);
+    animation: animate 3s linear infinite;
 }
 
 #sub-menu-holder {
@@ -344,35 +345,163 @@ nav .menu-item.highlight:hover ~ #sub-menu-container #sub-menu-holder #sub-menu-
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150vh;
-    width: 100vw;
+    margin: 77vh;
+    width: auto;
   }
-  #apple,
-  #twitter,
-  #github,
-  #facebook {
-    font-size: 2em;
-    background-color: #18191f;
+  .container .btn{
+    position: relative;
+    margin: 0rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .btn .tooltip{
+    position: absolute;
+    top: 0;
     color: #fff;
-    box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
-      2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
-      inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
-      inset 2px 2px 10px #00000080;
-    border-radius: 15px;
+    font-size: 1.1rem;
+    padding: 0.4rem 1.2rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 1.5rem;
+    opacity: 0;
+    z-index: 2;
+}
+.container .btn .tooltip::before{
+    position: absolute;
+    content: '';
+    height: 0.8rem;
+    width: 0.8rem;
+    bottom: -0.4rem;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+}
+.container .btn:hover .tooltip{
+    opacity: 1;
+    pointer-events: none;
+    top: -3.7rem;
+    transition: all 0.4s cubic-bezier(0.68, -0.55,  0.265, 1.55);
+}
+.container .instagram .tooltip,
+.container .instagram .tooltip::before{
+    background-color: #8a3ab9;
+}
+.container .youtube .tooltip,
+.container .youtube .tooltip::before{
+    background-color: #ff0000;
+}
+.container .facebook .tooltip,
+.container .facebook .tooltip::before{
+    background-color:#4267b2;
+}
+.container .whatsapp .tooltip,
+.container .whatsapp .tooltip::before{
+    background-color: #25d366;
+}
+.container .github .tooltip,
+.container .github .tooltip::before{
+    background-color: #333333;
+}
+.container .btn input[type="checkbox"]{
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    -webkit-appearance: none;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+                 10px 10px 15px rgba(70, 70, 70, 0.12);
+    border-radius: 50%;
+    border: 0.4rem solid #ececec;
+    outline: none;
+    cursor: pointer;
+}
+.container .btn input[type="checkbox"]:checked{
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba(70, 70, 70, 0.12),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+    inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+.container .btn input[type="checkbox"]:checked ~.icon .fa-instagram{
+    color: #8a3ab9;
+    transition: all 0.4s ease-out;
+}
+.container .btn input[type="checkbox"]:checked ~.icon .fa-youtube{
+    color: #ff0000;
+    transition: all 0.4s ease-out;
+}
+.container .btn input[type="checkbox"]:checked ~.icon .fa-facebook{
+    color: #4267b2;
+    transition: all 0.4s ease-out;
+}
+.container .btn input[type="checkbox"]:checked ~.icon .fa-whatsapp{
+    color: #25d366;
+    transition: all 0.4s ease-out;
+}
+.container .btn input[type="checkbox"]:checked ~.icon .fa-github{
+    color: #333333;
+    transition: all 0.4s ease-out;
+}
+.container .btn .icon{
+    height: 4rem;
+    width: 4rem;
+    display: grid;
+    place-items: center;
+}
+.container .btn .icon .fab{
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    opacity: 90%;
+    cursor: pointer;
+}
+#instagram,
+  #twitter,
+  #facebook,
+ #discord{
+    font-size: 3em;
+    padding: 9px 12px;
+    margin: 0 40px;
+    color: #fff;
+ }
+#instagram:hover {
+    color: rgb(6, 51, 97);
     padding: 9px 12px;
     margin: 0 40px;
     animation: animate 3s linear infinite;
-    text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
-      0 0 200px #0072ff;
+  
+}
+#twitter:hover {
+    color: rgb(6, 51, 97);
+    padding: 9px 12px;
+    margin: 0 40px;
+    animation: animate 3s linear infinite;
+  
+}
+#facebook:hover {
+    color: rgb(6, 51, 97);
+    padding: 9px 12px;
+    margin: 0 40px;
+    animation: animate 3s linear infinite;
+  
+}
+
+ #discord:hover {
+    color: rgb(6, 51, 97);
+    padding: 9px 12px;
+    margin: 0 40px;
+    animation: animate 3s linear infinite;
+    
+  }
+  #instagram {
+    animation-delay: 0.7s;
   }
   #twitter {
-    animation-delay: 0.3s;
+    animation-delay: 0.7s;
   }
   #facebook {
     animation-delay: 0.7s;
   }
-  #github {
-    animation-delay: 0.1s;
+  #discord {
+    animation-delay: 0.7s;
   }
   
   @keyframes animate {
@@ -383,22 +512,4 @@ nav .menu-item.highlight:hover ~ #sub-menu-container #sub-menu-holder #sub-menu-
       filter: hue-rotate(360deg);
     }
   }
-  
-.home__social {
-    position: absolute;
-    top: 50%;
-    left: -5rem;
-    transform: rotate(-90deg);
-    display: flex;
-    column-gap: 1rem;
-  }
-  
-  .home__social-link {
-    color: white;
-    transition: .3s;
-    text-decoration: none;
-  }
-  
-  .home__social-link:hover {
-    color:#9ea9af;
-  }
+
