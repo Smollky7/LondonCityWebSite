@@ -410,23 +410,14 @@ nav .menu-item.highlight:hover ~ #sub-menu-container #sub-menu-holder #sub-menu-
 .twitter:hover .social {
   color: #3aaae1;
 }
-.facebook:hover .circle {
+.discord:hover .circle {
   fill: #ffffff;
   fill-opacity: 1;
-  -webkit-animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards, colorFacebook 1s linear forwards;
-          animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards, colorFacebook 1s linear forwards;
+  -webkit-animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards, colorDiscord 1s linear forwards;
+          animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards, colorDiscord 1s linear forwards;
 }
-.facebook:hover .social {
-  color: #3b5998;
-}
-.google:hover .circle {
-  fill: #ffffff;
-  fill-opacity: 1;
-  -webkit-animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards, colorGoogle 1s linear forwards;
-          animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards, colorGoogle 1s linear forwards;
-}
-.google:hover .social {
-  color: #dd4b39;
+.discord:hover .social {
+  color: #7289da;
 }
 .instagram:hover .circle {
   fill: #ffffff;
@@ -436,15 +427,6 @@ nav .menu-item.highlight:hover ~ #sub-menu-container #sub-menu-holder #sub-menu-
 }
 .instagram:hover .social {
   color: #cb2092;
-}
-.linkedin:hover .circle {
-  fill: #ffffff;
-  fill-opacity: 1;
-  -webkit-animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards, colorLinkedin 1s linear forwards;
-          animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards, colorLinkedin 1s linear forwards;
-}
-.linkedin:hover .social {
-  color: #007bb6;
 }
 @-webkit-keyframes colorTwitter {
   from {
@@ -462,36 +444,20 @@ nav .menu-item.highlight:hover ~ #sub-menu-container #sub-menu-holder #sub-menu-
     stroke: #3aaae1;
   }
 }
-@-webkit-keyframes colorFacebook {
+@-webkit-keyframes colorDiscord {
   from {
     stroke: #ffffff;
   }
   to {
-    stroke: #3b5998;
+    stroke: #7289da;
   }
 }
-@keyframes colorFacebook {
+@keyframes colorDiscord {
   from {
     stroke: #ffffff;
   }
   to {
-    stroke: #3b5998;
-  }
-}
-@-webkit-keyframes colorGoogle {
-  from {
-    stroke: #ffffff;
-  }
-  to {
-    stroke: #dd4b39;
-  }
-}
-@keyframes colorGoogle {
-  from {
-    stroke: #ffffff;
-  }
-  to {
-    stroke: #dd4b39;
+    stroke: #7289da;
   }
 }
 @-webkit-keyframes colorInstagram {
@@ -508,22 +474,6 @@ nav .menu-item.highlight:hover ~ #sub-menu-container #sub-menu-holder #sub-menu-
   }
   to {
     stroke: #cb2092;
-  }
-}
-@-webkit-keyframes colorLinkedin {
-  from {
-    stroke: #ffffff;
-  }
-  to {
-    stroke: #007bb6;
-  }
-}
-@keyframes colorLinkedin {
-  from {
-    stroke: #ffffff;
-  }
-  to {
-    stroke: #007bb6;
   }
 }
 @-webkit-keyframes outWaveIn {
