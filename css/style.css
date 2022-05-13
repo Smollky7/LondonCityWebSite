@@ -1,8 +1,8 @@
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css); 
 
 :root {
-    --menu-width: 37.5em; /* Width of menu */
-    --items: 5; /* Number of items you have */
+    --menu-width: 47.5em; /* Width of menu */
+    --items: 4; /* Number of items you have */
     --item-width: calc(var(--menu-width) / var(--items));
 }
 
@@ -44,14 +44,14 @@ nav .menu-item {
     font-weight: 600;
     transform-style: preserve-3d;
     flex-grow: 1;
-    display: flex;
+    display: contents;
     flex-basis: var(--item-width);
     box-sizing: border-box;
     padding: 1em 1.5em;
     justify-content: center;
     perspective: 200px;
     letter-spacing: 0.5px;
-    min-height: 7.5em;
+    min-height: 1.5em;
 }
 
 nav .menu-text, nav .menu-text a {
@@ -67,16 +67,16 @@ nav .menu-text, nav .menu-text a {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  width: 45%;
 }
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.fasicon {
+  width: 220px;
+  height: 60px;
+  font-size: 36px;
+  color: #ffffff;
+  margin-left: 1456px;
+  margin-top: -61px;
 }
-
 .btn {
   display: flex;
   justify-content: center;
@@ -92,7 +92,8 @@ nav .menu-text, nav .menu-text a {
   text-align: center;
   overflow: hidden;
   border-radius: 5px;
-  margin-left: 972px;
+  margin-left: 1523px;
+  margin-top: -61px;
   box-shadow: 0 6px 30px -10px #f8fc09cb;
 }
 .btn:hover {
