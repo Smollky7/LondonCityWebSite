@@ -34,20 +34,6 @@ body {
   overflow: hidden;
   background-size: cover; /* evita do video passar a altura desejada do .wrap */
 }
-.wrap > .bg-video > video {
-  width: 100%;
-}
-.bg_video {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 1920px;
-    min-height: 1080px;
-    width: 1920px;
-    height: 1080px;
-    z-index: -10000;
-    background-size: cover;
-}
 nav {
     width: var(--menu-width);
     display: flex;
