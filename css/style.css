@@ -15,16 +15,27 @@ body {
     overflow: hidden;
     width: 100vw;
 }
-.bg_video {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 1920px;
-    min-height: 1080px;
-    width: 1920px;
-    height: 1080px;
-    z-index: -10000;
-    background-size: cover;
+.wrap {
+  /*Ajuste a largura e altura desejadas aqui*/
+  width: 100%;
+  height: 100%;
+
+  /*isto fará o elemento video e o .container se adaptarem ao .wrap*/
+  position: absolute;
+}
+.wrap > .bg-video {
+  position: relative;
+  top: 0;
+  left: 0;
+  min-width: 1920px;
+  min-height: 1080px;
+  z-index: -100000; /*apenas um -1 é necessário quando se trabalha com relative + absolute, sendo pai e filho*/
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* evita do video passar a altura desejada do .wrap */
+}
+.wrap > .bg-video > video {
+  width: 100%;
 }
 nav {
     width: var(--menu-width);
