@@ -1,81 +1,434 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://kit.fontawesome.com/628c8d2499.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jack - personal portfolio</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
 </head>
-<body>
-    <div class="wrap">
-        <div class="bg-video">
-            <video autoplay loop>
-                <source src="img/BackGroundVideo.mp4" type="video/mp4"/>
-            </video>
-        </div>
-    </div>
 
-    <nav id="menu">
-        <div class="menu-item"> 
-            <div class="menu-text">
-                <a href="#">Loja</a>
-            </div>
-        </div>
-        <div class="menu-item highlight">
-            <div class="menu-text">
-                <a href="pags/diretrizes.html" external="_back" rel="external">Regras</a>
-            </div>
-        </div>
-        <div class="menu-item highlight">
-            <div class="menu-text">
-                <a href="#">Suporte</a>
-            </div>
-        </div>
-        <div class="menu-item">
-            <div class="menu-text">
-                <a href="#">Equipe</a>
-            </div>
-        </div>
-            
+<body id="top" class="dark_theme">
 
-    </nav>
-    <div class="iii">
-        <img id="img_logo" src="img/london_city.png" alt="">
-    </div>
-    <div id="wrapper">
-        <div id="share">
-          <a href="#" class="container instagram">
-            <svg  preserveAspectRatio="xMinYMin meet" viewBox="0 0 200 200" class="circle">  
-               <circle cx="100" cy="100" r="50"/>
-            </svg>
-            <div class="social">
-              <i class="fa fa-instagram"></i>
-            </div>
-          </a>
-          <a href="#" class="container tiktok">
-            <svg  preserveAspectRatio="xMinYMin meet" viewBox="0 0 200 200" class="circle">  
-               <circle cx="100" cy="100" r="50"/>
-            </svg>
-            <div class="social">
-              <i class="fab fa-tiktok"></i>
-            </div>
-          </a>
-          <a href="#" class="container discord">
-            <svg  preserveAspectRatio="xMinYMin meet" viewBox="0 0 200 200" class="circle">  
-               <circle cx="100" cy="100" r="50"/>
-            </svg>
-            <div class="social">
-              <i class="fab fa-discord"></i>
-            </div>
-          </a>
-        </div>
-        
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1 class="h1 logo">
+      </h1>
+
+      <div class="navbar-actions">
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+
       </div>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link">inicio</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">Sobre</a>
+          </li>
+
+          <li>
+            <a href="#teaamCard" class="navbar-link">Equipe</a>
+          </li>
+          
+          <li>
+            <a href="#contact" class="navbar-link">Suporte</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    
+    <article class="container">
       
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="wrap">
+                <div class="bg-video">
+                    <video autoplay loop>
+                        <source src="../img/BackGroundVideo.mp4" type="video/mp4"/>
+                    </video>
+                </div>
+            </div>
+
+        <figure class="hero-banner">
+
+          <picture>
+            <img src="../img/london_city.png" alt="" width="768px">
+        
+          </picture>
+          
+        </figure>
+      
+        <ul class="hero-social-list">
+
+          <li>
+            <a href="#" class="hero-social-link">
+              <ion-icon name="cart-outline"></ion-icon>
+
+              <div class="tooltip">Store</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="hero-social-link">
+              <ion-icon name="logo-Instagram"></ion-icon>
+
+              <div class="tooltip">Instagram</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="hero-social-link">
+              <ion-icon name="logo-Discord"></ion-icon>
+
+              <div class="tooltip">Discord</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="hero-social-link">
+              <ion-icon name="logo-TikTok"></ion-icon>
+
+              <div class="tooltip">TikTok</div>
+            </a>
+          </li>
+        </ul>
+
+        <a href="#stats" class="scroll-down">Scroll</a>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #STATS
+      -->
+
+      
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" id="about">
+
+        <figure class="about-banner">
+          <img src="https://media.discordapp.net/attachments/796831755800936489/981183955799781376/Picsart_22-05-31_09-58-29-953.png" alt="img"
+            class="w-100">
+        </figure>
+
+        <div class="about-content section-content">
+
+          <p class="section-subtitle">Sobre nós</p>
+
+          <h2 class="h3 section-title">Quem somoos nós?</h2>
+
+          <p class="section-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur doloribus expedita, quaerat facere porro ea aliquid eaque rem iusto ratione nulla neque minus quas quidem hic tempore modi dignissimos. Eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nisi enim deserunt incidunt quas rem, laboriosam esse non quia odio at sapiente iste. Deleniti aperiam fugit consequuntur dolor esse ad!
+          </p>
+
+          <div class="btn-group">
+            <button class="btn btn-primary">Loja</button>
+          </div>
+
+        </div>
+
+      </section>
+   <!-- 
+        - #TEAM
+      -->
+
+      <section id="teaamCard" class="teaamCard">
+        <div class="cards text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgbox">
+                                <img src="https://i.postimg.cc/WbhgqJjq/Whats-App-Image-2021-11-03-at-12-54-56-PM.jpg" alt="">
+                            </div>
+                            <div class="contentbx mt-5">
+                                <h3 class="fw-bold ">Ehab Ehab <br><span class="fw-light ">Back-End</span></h3>
+                            </div>
+                        </div>
+                        <ul class="sci">
+                            <li style="--i:1" class="first">
+                                <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                            </li>
+                            <li style="--i:2" class="second">
+                                <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                            <li style="--i:3" class="third">
+                                <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgbox">
+                                <img src="https://i.postimg.cc/JzksLfCG/Whats-App-Image-2021-11-03-at-1-26-06-PM.jpg" alt="">
+                            </div>
+                            <div class="contentbx mt-5">
+                                <h3 class="fw-bold">Ahmed Howam <br><span class="fw-light">Front-End</span></h3>
+                            </div>
+                        </div>
+                        <ul class="sci">
+                            <li style="--i:1" class="first">
+                                <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                            </li>
+                            <li style="--i:2" class="second">
+                                <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                            <li style="--i:3" class="third">
+                                <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgbox">
+                                <img src="https://i.postimg.cc/0261Qm5B/Whats-App-Image-2021-07-19-at-3-49-16-AM.jpg" alt="">
+                            </div>
+                            <div class="contentbx mt-5">
+                                <h3 class="fw-bold">Abo Awab <br><span class="fw-light">ALL</span></h3>
+                            </div>
+                        </div>
+                        <ul class="sci">
+                            <li style="--i:1" class="first">
+                                <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                            </li>
+                            <li style="--i:2" class="second">
+                                <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                            <li style="--i:3" class="third">
+                                <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+      <!-- 
+        - #PROJECTS
+      -->
+
+
+
+
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="contact" id="contact">
+
+        <div class="contact-content section-content">
+
+          <p class="section-subtitle">Contato</p>
+
+          <h2 class="h3 section-title">Como você pode nós encontrar?</h2>
+
+          <p class="section-text">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, fugit debitis molestias, aperiam ab deleniti obcaecati rem illo impedit, neque odit nihil autem soluta dolorum at cum itaque fuga placeat.
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="logo-Discord"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Canal de suporte:</h3>
+
+                <address class="contact-info">
+                  <a href="" class="contact-info">Servidor Discord de suporte</a>
+                </address>
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Email:</h3>
+
+                <a href="mailto:support@jack.com" class="contact-info">support@gmail.com</a>
+              </div>
+
+            </li>
+
+            <li>
+              <ul class="contac-social-list">
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Store</div>
+
+                    <ion-icon name="cart-outline"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Instagram</div>
+
+                    <ion-icon name="logo-Instagram"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Discord</div>
+
+                    <ion-icon name="logo-Discord"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">TikTok</div>
+
+                    <ion-icon name="logo-TikTok"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="h1 logo">
+        <a href="#">
+          <img src="img/london_city.png" alt="" width="100px">
+        </a>
+      </p>
+
+      <p class="copyright">
+        &copy; 2022 <a href="#">Supremo</a>. Todos os direitos reservados.
+      </p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
