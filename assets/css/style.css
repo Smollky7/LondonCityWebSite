@@ -1043,10 +1043,10 @@ textarea.input-field {
   .wrap > .bg-video {
     position: relative;
     min-width: 350px;
-    min-height: 900px;
+    min-height: 850px;
     z-index: -100000;
     width: 350px;
-    height: 900px;
+    height: 850px;
     overflow: hidden;
     background-size: cover;
     
@@ -1112,10 +1112,10 @@ textarea.input-field {
   .wrap > .bg-video {
     position: relative;
     min-width: 200px;
-    min-height: 900px;
+    min-height: 850px;
     z-index: -100000;
     width: 200px;
-    height: 900px;
+    height: 850px;
     overflow: hidden;
     background-size: cover;
     
@@ -1378,10 +1378,10 @@ textarea.input-field {
   .wrap > .bg-video {
     position: relative;
     min-width: 400px;
-    min-height: 900px;
+    min-height: 850px;
     z-index: -100000;
     width: 400px;
-    height: 900px;
+    height: 850px;
     overflow: hidden;
     background-size: cover;
     
