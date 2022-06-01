@@ -1440,3 +1440,11 @@ textarea.input-field {
   .about-banner { max-width: 450px; }
 
 }
+
+@media (max-width: 2460px) {
+  .wrap > .bg-video {
+    display: none;
+    
+  }
+
+ }
