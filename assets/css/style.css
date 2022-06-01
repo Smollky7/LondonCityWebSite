@@ -1126,10 +1126,10 @@ textarea.input-field {
 @media (max-width: 768px) {
   .wrap > .bg-video {
     position: relative;
-    min-width: 550px;
+    min-width: 450px;
     min-height: 1080px;
     z-index: -100000;
-    width: 550px;
+    width: 450px;
     height: 1080px;
     overflow: hidden;
     background-size: cover;
@@ -1392,10 +1392,10 @@ textarea.input-field {
 @media (max-width: 992px) {
   .wrap > .bg-video {
     position: relative;
-    min-width: 785px;
+    min-width: 685px;
     min-height: 1080px;
     z-index: -100000;
-    width: 785px;
+    width: 685px;
     height: 1080px;
     overflow: hidden;
     background-size: cover;
@@ -1440,11 +1440,3 @@ textarea.input-field {
   .about-banner { max-width: 450px; }
 
 }
-
-@media (max-width: 2460px) {
-  .wrap > .bg-video {
-    display: none;
-    
-  }
-
- }
