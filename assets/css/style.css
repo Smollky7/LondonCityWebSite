@@ -166,9 +166,8 @@ body {
 body.active { overflow: hidden; }
 
 .wrap {
-  /*Ajuste a largura e altura desejadas aqui*/
-  /*isto fará o elemento video e o .container se adaptarem ao .wrap*/
   position: absolute;
+
 }
 .wrap > .bg-video {
   position: relative;
@@ -178,13 +177,13 @@ body.active { overflow: hidden; }
   bottom: 0;
   min-width: 1920px;
   min-height: 1080px;
-  z-index: -100000; /*apenas um -1 é necessário quando se trabalha com relative + absolute, sendo pai e filho*/
+  z-index: -100000;
   width: 1920px;
   height: 1080px;
   overflow: hidden;
-  background-size: cover; /* evita do video passar a altura desejada do .wrap */
+  background-size: cover;
+  
 }
-
 
 /*-----------------------------------*\
  * #REUSED STYLE
@@ -1045,7 +1044,11 @@ textarea.input-field {
   /**
    * REUSED STYLE
    */
-
+   .hero-banner {
+    max-width: 50px;
+    width: 75%;
+    margin: auto;
+  }
   .container {
     max-width: 550px;
     margin-inline: auto;
