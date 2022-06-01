@@ -1042,10 +1042,10 @@ textarea.input-field {
 @media (max-width: 550px) {
   .wrap > .bg-video {
     position: relative;
-    min-width: 160px;
+    min-width: 460px;
     min-height: 900px;
     z-index: -100000;
-    width: 160px;
+    width: 460px;
     height: 900px;
     overflow: hidden;
     background-size: cover;
