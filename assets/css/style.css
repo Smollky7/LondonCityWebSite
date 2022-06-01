@@ -1057,10 +1057,10 @@ textarea.input-field {
 @media (max-width: 550px) {
   .wrap > .bg-video {
     position: relative;
-    min-width: 460px;
+    min-width: 260px;
     min-height: 1080px;
     z-index: -100000;
-    width: 460px;
+    width: 260px;
     height: 1080px;
     overflow: hidden;
     background-size: cover;
@@ -1126,10 +1126,10 @@ textarea.input-field {
 @media (max-width: 768px) {
   .wrap > .bg-video {
     position: relative;
-    min-width: 750px;
+    min-width: 550px;
     min-height: 1080px;
     z-index: -100000;
-    width: 750px;
+    width: 550px;
     height: 1080px;
     overflow: hidden;
     background-size: cover;
@@ -1167,10 +1167,6 @@ textarea.input-field {
   }
 
 
-  .wrap > .bg-video {
-    display: none;
-    
-  }
 
   /**
    * REUSED STYLE
@@ -1396,10 +1392,10 @@ textarea.input-field {
 @media (max-width: 992px) {
   .wrap > .bg-video {
     position: relative;
-    min-width: 985px;
+    min-width: 785px;
     min-height: 1080px;
     z-index: -100000;
-    width: 985px;
+    width: 785px;
     height: 1080px;
     overflow: hidden;
     background-size: cover;
@@ -1445,3 +1441,10 @@ textarea.input-field {
 
 }
 
+@media (max-width: 2460px) {
+  .wrap > .bg-video {
+    display: none;
+    
+  }
+
+ }
