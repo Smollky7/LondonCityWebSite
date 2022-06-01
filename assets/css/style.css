@@ -588,103 +588,84 @@ main { overflow-x: hidden; }
  * #TEAM
 \*-----------------------------------*/
 
-section {
-  position: relative;
-  display: inline-block;
-}
-
-.row {
-  display: inline-flex;
-}
-
-.cards {
-  position: relative;
-  margin: 40px 0;
-  display: inline-block;
-}
-
-.cards .card {
-  position: relative;
-  width: 350px;
-  height: 350px;
-  background: rgba(255, 255, 255, 0.05);
-  margin: 20px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  backdrop-filter: blur(10px);
-}
-
-.cards .card .content {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  opacity: 0.5;
-  transition: 0.5s;
-}
-
-.cards .card:hover .content {
-  opacity: 1;
-  transform: translateY(-20px);
-}
-
-.cards .card .content .imgbox {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 10px solid rgba(0, 0, 0, 0.2);
-}
-
-.cards .card .content .imgbox img {
-  position: absolute;
-  top: 0;
-  left: 0;
+.cards-list {
+  z-index: 0;
   width: 100%;
-  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
   object-fit: cover;
 }
-.cards .card .content .contentbx h3 {
-  color:  var(--color-primary);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 18px;
-}
-.sci {
-  position: absolute;
-  bottom: 50px;
-  display: flex;
-}
-.card .sci li {
-  list-style: none;
-  margin: 0 10px;
-  transform: translateY(900px);
-  transition: 0.5s;
-  opacity: 0;
-  transition-delay: calc(0.1s * var(--i));
-}
-.card:hover .sci li {
-  transform: translateY(950px);
-  opacity: 1;
-}
-.sci .first a i {
-  color: #4267b2;
-  font-size: 24px;
-}
-.sci .second a i {
-  color: #1da1f2;
-  font-size: 24px;
-}
-.sci .third a i {
-  color: #e1306c;
-  font-size: 24px;
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
 }
 
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+
+/*
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  transition: 0.4s;
+}
+*/
 
 
 /*-----------------------------------*\
@@ -1044,6 +1025,8 @@ textarea.input-field {
   /**
    * REUSED STYLE
    */
+   
+
    .hero-banner {
     max-width: 50px;
     width: 75%;
@@ -1084,6 +1067,7 @@ textarea.input-field {
   /**
    * REUSED STYLE
    */
+
 
   .container { max-width: 720px; }
 
@@ -1347,39 +1331,6 @@ textarea.input-field {
   }
 
   .about-banner { margin-bottom: 0; }
-
-
-
-
-  /**
-   * SKILLS
-   */
-
-  .skills {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 50px;
-  }
-
-  .skills-content { margin-bottom: 0; }
-
-  .skills-toggle { margin-inline: 0; }
-
-
-
-  /**
-   * PROJECT
-   */
-
-  .project-list { column-count: 3; }
-
-  .project-list > li:first-child {
-    column-span: unset;
-    margin: 25px;
-    margin-left: 0;
-  }
-
 
 
   /**
