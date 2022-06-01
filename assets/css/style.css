@@ -1167,6 +1167,10 @@ textarea.input-field {
   }
 
 
+  .wrap > .bg-video {
+    display: none;
+    
+  }
 
   /**
    * REUSED STYLE
@@ -1441,10 +1445,3 @@ textarea.input-field {
 
 }
 
-@media (max-width: 2460px) {
-  .wrap > .bg-video {
-    display: none;
-    
-  }
-
- }
