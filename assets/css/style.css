@@ -1054,7 +1054,19 @@ textarea.input-field {
 
 }
 
-
+@media (max-width: 550px) {
+  .wrap > .bg-video {
+    position: relative;
+    min-width: 460px;
+    min-height: 1080px;
+    z-index: -100000;
+    width: 460px;
+    height: 1080px;
+    overflow: hidden;
+    background-size: cover;
+    
+  }
+ }
 
 
 
@@ -1111,6 +1123,19 @@ textarea.input-field {
 
 }
 
+@media (max-width: 768px) {
+  .wrap > .bg-video {
+    position: relative;
+    min-width: 750px;
+    min-height: 1080px;
+    z-index: -100000;
+    width: 750px;
+    height: 1080px;
+    overflow: hidden;
+    background-size: cover;
+    
+  }
+ }
 
 
 
@@ -1364,7 +1389,19 @@ textarea.input-field {
 
 }
 
-
+@media (max-width: 992px) {
+  .wrap > .bg-video {
+    position: relative;
+    min-width: 985px;
+    min-height: 1080px;
+    z-index: -100000;
+    width: 985px;
+    height: 1080px;
+    overflow: hidden;
+    background-size: cover;
+    
+  }
+ }
 
 
 
