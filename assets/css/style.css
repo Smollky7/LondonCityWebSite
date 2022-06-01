@@ -1042,10 +1042,10 @@ textarea.input-field {
 @media (max-width: 550px) {
   .wrap > .bg-video {
     position: relative;
-    min-width: 400px;
+    min-width: 350px;
     min-height: 900px;
     z-index: -100000;
-    width: 400px;
+    width: 350px;
     height: 900px;
     overflow: hidden;
     background-size: cover;
@@ -1111,10 +1111,10 @@ textarea.input-field {
 @media (max-width: 768px) {
   .wrap > .bg-video {
     position: relative;
-    min-width: 250px;
+    min-width: 200px;
     min-height: 900px;
     z-index: -100000;
-    width: 250px;
+    width: 200px;
     height: 900px;
     overflow: hidden;
     background-size: cover;
@@ -1377,10 +1377,10 @@ textarea.input-field {
 @media (max-width: 992px) {
   .wrap > .bg-video {
     position: relative;
-    min-width: 485px;
+    min-width: 400px;
     min-height: 900px;
     z-index: -100000;
-    width: 485px;
+    width: 400px;
     height: 900px;
     overflow: hidden;
     background-size: cover;
